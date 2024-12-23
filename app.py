@@ -57,5 +57,5 @@ cbf.acidicBasicPageFcns(app=app)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8051, jupyter_mode="external")
+    app.run(debug=True, jupyter_mode="external")
 

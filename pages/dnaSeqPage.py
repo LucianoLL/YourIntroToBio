@@ -10,6 +10,7 @@ import dash
 import dash_bootstrap_components as dbc
 import mainAppAssets.dnaSeqPageFolder.misMatchCard as mmc
 import mainAppAssets.dnaSeqPageFolder.lectureCard as lec
+import mainAppAssets.dnaSeqPageFolder.reverseComplementCard as rrc
 import mainAppAssets.universalAssets as uva
 
 '''
@@ -28,7 +29,11 @@ tabCards = dbc.Tabs(children=[
     #         label="Lecture 01"),
     dbc.Tab(mmc.misMatchCard,
             tab_id="tab02",
-            label="Mismatch Calculator")],
+            label="Mismatch Calculator"),
+
+    dbc.Tab(rrc.reverseCompCard,
+            tab_id="tab_03",
+            label="Reverse Complement")],
     id="tabs02",
     active_tab="tab02"
 )

@@ -55,6 +55,31 @@ def dnaSeqPageFcns(app):
         else:
             return "Unequal Length", "Can't Compute"
 
+    @app.callback(
+        dash.Output(component_id="rcc_out", component_property="value"),
+        dash.Input(component_id="rcc_in", component_property="value")
+    )
+    def reverseCompFcn(rcInput):
+        tmpSeq = ""
+
+        if (rcInput is None) or (rcInput == ""):
+            return ""
+
+        for tmpPro in rcInput:
+            if tmpPro.upper() == "C":
+                tmpSeq += "G"
+            elif tmpPro.upper() == "G":
+                tmpSeq += "C"
+            elif tmpPro.upper() == "A":
+                tmpSeq += "T"
+            elif tmpPro.upper() == "T":
+                tmpSeq += "A"
+            else:
+                tmpSeq += "N"
+
+        return tmpSeq[::-1]
+
+
 '''
 This is the set of functions associated with
 the 'Acids and Bases' page.

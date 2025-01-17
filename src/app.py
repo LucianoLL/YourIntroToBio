@@ -10,6 +10,8 @@ import dash
 import dash_bootstrap_components as dbc
 import mainAppAssets.universalAssets as uva
 import mainAppAssets.callbackFcns as cbf
+import assets.mainAppAssetStyles as mas
+
 
 '''
 Setting up the Dash app, using:
@@ -21,17 +23,32 @@ app = dash.Dash(__name__,
                                       dbc.icons.FONT_AWESOME],
                 use_pages=True)
 
+'''
+Changing the default favicon to a custom one
+'''
+app._favicon = "images/logo.ico"
 
+'''
+Logo for the Dash app
+'''
+img01 = dash.html.Img(src="assets/images/logo.png",
+                      style=mas.headerImg,
+                      )
 '''
 Fetching the links for the pages in this project
 '''
 siteLinks = dash.html.Div([
     dash.html.Div(
-        dash.dcc.Link(children=page["title"],
-                      href=page["relative_path"]),
-        style={"margin-right": 10}  # This is meant to space out the page links
-    ) for page in dash.page_registry.values()],
-    style={"display": "flex"}  # To display the links in a row than a column
+        dbc.Button(
+            dash.dcc.Link(children=page["title"],
+                          href=page["relative_path"],
+                          style=mas.buttonLinkText,
+                          ),
+            style=mas.mainTabButtons  # This is meant to space out the page links
+        )
+    ) for page in dash.page_registry.values()
+    ],
+    style=mas.rowStyle  # To display the links in a row than a column
 )
 
 '''
@@ -39,7 +56,7 @@ These are essentially the assets that'll be displayed
 in all the pages of this project
 '''
 app.layout = dbc.Container(children=[
-    uva.siteHeader,  # The header that'll be displayed at the top of the app
+    img01,  # Replaced the text header with an image
     siteLinks,  # The row of links to several pages in this project
     uva.bottomMarginSpace_25px,
     dash.page_container  # Always at the bottom of our container...
@@ -54,8 +71,5 @@ cbf.dnaSeqPageFcns(app=app)
 cbf.acidicBasicPageFcns(app=app)
 
 
-
-
 if __name__ == '__main__':
     app.run(debug=True, jupyter_mode="external")
-

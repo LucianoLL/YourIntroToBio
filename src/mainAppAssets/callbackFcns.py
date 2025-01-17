@@ -2,7 +2,7 @@
 Filename: callBackFcn.py
 Created by: Luciano L. Lorenzana
 Date: 9/17/2024
-Python 3.11
+Python 3.12
 
 Disc: Housing any functions that'd be used in the
       'DNA Sequence' page.

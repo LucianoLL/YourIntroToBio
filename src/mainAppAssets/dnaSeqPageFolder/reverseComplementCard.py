@@ -2,7 +2,7 @@
 Filename: reverseComplementCard.py
 Created by: Luciano L. Lorenzana
 Date: 11/19/2024
-Python 3.11
+Python 3.12
 
 Disc: All the assets and cards for the
       'Reverse Complement Calculator'

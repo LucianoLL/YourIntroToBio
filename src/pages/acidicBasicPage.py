@@ -2,7 +2,7 @@
 Filename: acidicBasicPage.py
 Created by: Luciano L. Lorenzana
 Date: 9/19/2024
-Python 3.11
+Python 3.12
 
 Disc: A page dedicated to acids and bases.
 """

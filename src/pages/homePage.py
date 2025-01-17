@@ -2,7 +2,7 @@
 Filename: homePage.py
 Created by: Luciano L. Lorenzana
 Date: 9/6/2024
-Python 3.11
+Python 3.12
 
 Disc: The code to the home page, the first
       page when booting up the app.

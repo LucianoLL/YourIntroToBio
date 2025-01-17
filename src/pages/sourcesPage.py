@@ -2,6 +2,7 @@
 Filename: sourcesPage.py
 Created by: Luciano L. Lorenzana
 Date: 9/19/2024
+Python 3.12
 
 Disc: A page that holds all sources and references to
       the information presented in this project

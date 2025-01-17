@@ -2,14 +2,13 @@
 Filename: dnaSeqPage.py
 Created by: Luciano L. Lorenzana
 Date: 9/13/2024
-Python 3.11
+Python 3.12
 
 Desc: The layout for the 'DNA Section' page
 """
 import dash
 import dash_bootstrap_components as dbc
 import mainAppAssets.dnaSeqPageFolder.misMatchCard as mmc
-import mainAppAssets.dnaSeqPageFolder.lectureCard as lec
 import mainAppAssets.dnaSeqPageFolder.reverseComplementCard as rrc
 import mainAppAssets.universalAssets as uva
 

@@ -2,7 +2,7 @@
 Filename: lectureCard.py
 Created by: Luciano L. Lorenzana
 Date: 9/19/2024
-Python 3.11
+Python 3.12
 
 Disc: Holds text for any lecture material for
       the 'DNA Section' page.

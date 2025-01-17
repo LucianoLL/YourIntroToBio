@@ -2,7 +2,7 @@
 Filename: hydrogenRatioCard.py
 Created by: Luciano L. Lorenzana
 Date: 9/19/2024
-Python 3.11
+Python 3.12
 
 Disc: These are all the assets associated with
       the 'Hydrogen Ratio Calculator'

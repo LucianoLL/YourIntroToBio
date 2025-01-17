@@ -2,7 +2,7 @@
 Filename: misMatchCard.py
 Created by: Luciano L. Lorenzana
 Date: 9/17/2024
-Python 3.11
+Python 3.12
 
 Disc: All the assets and cards for the
       'Mismatch Calculator'

@@ -2,7 +2,7 @@
 Filename: sourcesFile.py
 Created by: Luciano L. Lorenzana
 Date: 9/19/2024
-Python 3.11
+Python 3.12
 
 Disc: A list of markdown variables holding source citations,
       references

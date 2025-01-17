@@ -2,11 +2,12 @@
 Filename: homePageText.py
 Created by: Luciano L. Lorenzana
 Date: 9/19/2014
-Python 3.11
+Python 3.12
 
 Disc: Holds all the text that is used and displayed in the home page.
 """
 import dash
+import src.assets.homePageAssetStyles as hpa
 
 '''
 The block of text that you see in the first tab/card
@@ -22,6 +23,5 @@ introText = dash.dcc.Markdown(children=[
     learning the basics of biology. 
     """
     ],
-    style={"margin-top": 10,
-           "margin-bottom": 25}
+    style=hpa.introTextStyle
     )

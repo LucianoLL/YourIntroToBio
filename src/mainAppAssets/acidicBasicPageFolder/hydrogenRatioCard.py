@@ -19,8 +19,7 @@ tabText = dash.dcc.Markdown(children=
                             # Hydrogen Concentration Calculator
                             This is to calculate the (H+) ion ratio between two
                             separate pH levels.
-                            """
-                            )
+                            """)
 
 phInput01 = dbc.InputGroup(children=[dbc.InputGroupText("Type your INITIAL pH level"),
                                      dbc.Input(

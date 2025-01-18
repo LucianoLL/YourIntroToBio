@@ -40,13 +40,12 @@ Fetching the links for the pages in this project
 siteLinks = dash.html.Div([
     dash.html.Div(
         dbc.Button(
-            dash.dcc.Link(children=page["title"],
-                          href=page["relative_path"],
-                          style=mas.buttonLinkText,
-                          ),
+            children=page["title"],
+            id="button" + str(ind),
+            href=page["relative_path"],
             style=mas.mainTabButtons  # This is meant to space out the page links
         )
-    ) for page in dash.page_registry.values()
+    ) for ind, page in enumerate(dash.page_registry.values())
     ],
     style=mas.rowStyle  # To display the links in a row than a column
 )

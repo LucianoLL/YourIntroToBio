@@ -30,7 +30,7 @@ dnaInput01 = dbc.InputGroup(children=[dbc.InputGroupText("Type your FIRST DNA Se
                                           type="text"
                                       )
                                       ],
-                            className="mb-3")
+                            className="mb-4")
 
 '''
 The second DNA Sequence Input.
@@ -42,7 +42,7 @@ dnaInput02 = dbc.InputGroup(children=[dbc.InputGroupText("Type your SECOND DNA S
                                           type="text"
                                       )
                                       ],
-                            className="mb-3")
+                            className="mb-4")
 
 '''
 The output box for the number of mismatches.
@@ -53,7 +53,7 @@ mismatchVal = dbc.InputGroup(children=[dbc.InputGroupText("Number of Mismatches"
                                                  style={"color": "black"}
                                                  )
                                        ],
-                             className="mb-3")
+                             className="mb-4")
 
 '''
 The output box for the identity percentage, 
@@ -66,7 +66,7 @@ identPercent = dbc.InputGroup(children=[dbc.InputGroupText("Identity Percentage"
                                             style={"color": "black"}
                                         )
                                         ],
-                              className="mb-3")
+                              className="mb-4")
 
 '''
 Organizing the inputs into a container.

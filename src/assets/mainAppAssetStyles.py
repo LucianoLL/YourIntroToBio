@@ -13,7 +13,7 @@ Object: im01
 '''
 headerImg = {
     "margin-top": 10,
-    "margin-bottom": 10,
+    "margin-bottom": 15,
 }
 
 '''
@@ -34,6 +34,10 @@ Object: siteLinks
 mainTabButtons = {
     "background-color": "#1E434A",
     "border-color": "#FFFFFF",
+    "color": "#839496",
+    "font-family": "Rockwell",
+    "font-size": 15,
+    "font-weight": "bold",
     "margin-right": 10,
     "padding": 15,
 }

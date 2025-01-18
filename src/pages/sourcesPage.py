@@ -15,9 +15,15 @@ import mainAppAssets.universalAssets as uva
 dash.register_page(__name__,
                    title="Sources and References")
 
-sourceCard = dbc.Card(children=[
-    spff.campbellBioSource
-])
+sourceCard = (
+    dbc.Col(
+        dbc.Card(children=[
+        spff.campbellBioSource]),
+    width="autoSize",
+    style={"font-family": "Rockwell"},
+    className="mt-1 border"
+    )
+)
 
 layout = dbc.Container(children=[
     sourceCard,

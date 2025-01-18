@@ -30,7 +30,7 @@ dnaInput = dbc.InputGroup(children=[dbc.InputGroupText("Type Your DNA Sequence")
                                         type="text"
                                     )
                                     ],
-                          className="mb-5")
+                          className="mb-4")
 
 
 '''
@@ -44,7 +44,7 @@ reverseComp = dbc.InputGroup(children=[dbc.InputGroupText("Reverse Complement"),
                                            style={"color": "black"}
                                        )
                                        ],
-                             className="mb-5")
+                             className="mb-4")
 
 '''
 Organizing inputs into a container.

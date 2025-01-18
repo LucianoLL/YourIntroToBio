@@ -42,11 +42,13 @@ Placing the tabs into a row.
 '''
 tabRow = dbc.Row(children=[
     dbc.Col(tabCards,
-            width="auto",
-            lg=5,
+            width="autoSize",
             className="mt-1 border"
-            )
-])
+            )],
+    style={
+        "font-family": "Rockwell",
+    }
+)
 
 '''
 Laying out the assets for the page.

@@ -24,11 +24,13 @@ tabCards = dbc.Tabs(children=[
 
 tabRow = dbc.Row(children=[
     dbc.Col(tabCards,
-            width="auto",
-            lg=5,
-            className="mt-2 border"
-            )
-])
+            width="autoSize",
+            className="mt-1 border",
+            )],
+    style={
+        "font-family": "Rockwell",
+    }
+)
 
 layout = dbc.Container(children=[
     tabRow,
